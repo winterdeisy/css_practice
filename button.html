@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .btn {
+            text-decoration: none;
+            /* 기본크기 2배 */
+            font-size: 2rem; 
+            color: white;
+            /* 컨텐츠 내부 크기 */
+            padding: 10px 20px 10px 20px;
+            /* 화면에서 떨어뜨리기 */
+            margin: 20px;
+            /* 줄바꿈 없이 block */
+            display: inline-block;
+            /* 사각형 라운드 처리 */
+            border-radius: 10px;
+        }
+        .btn:active {
+            /* link:방문전 링크 상태, visited: 방문후 링크상태, 
+            hover:마우스 오버했을때 링크상태, active: 클릭했을때 링크 상태 */
+            
+            /* 눌렸을때 Y방향으로 10PX 이동 */
+            transform: translateY(10px);
+        }
+        .btn.blue {
+            background-color: green;
+        }
+        .btn.red {
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <!-- 링크를 버튼 모양으로-->
+    <a class="btn blue" href="#blue">blue</a>
+    <a class="btn red" href="#red">red</a>
+    
+</body>
+</html>
